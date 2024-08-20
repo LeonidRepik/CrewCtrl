@@ -19,6 +19,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 8000,
+    host: '127.0.0.1',
     proxy: {
       '/api': {
         target: 'https://crewctrl-29196d49230a.herokuapp.com',
