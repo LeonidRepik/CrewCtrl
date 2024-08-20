@@ -8,7 +8,7 @@
     "start": "nodemon server.js",
     "frontend": "npm run start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "build": "cd frontend && npm install && npm run build"
+    "build": "echo 123"
   },
   "author": "",
   "license": "ISC",
