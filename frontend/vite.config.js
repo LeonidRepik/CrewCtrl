@@ -21,7 +21,9 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://crewctrl-29196d49230a.herokuapp.com/api',
-        changeOrigin: true,
+        changeOrigin: false,
+        secure: false,
+        ws: true,
         configure: (proxy, _options) => {
           proxy.on('error', (err, _req, _res) => {
             console.log('proxy error', err);
