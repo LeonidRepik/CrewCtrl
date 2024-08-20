@@ -20,8 +20,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://crewctrl-29196d49230a.herokuapp.com/api',
-        changeOrigin: false,
+        target: 'https://crewctrl-29196d49230a.herokuapp.com',
+        changeOrigin: true,
         secure: false,
         ws: true,
         configure: (proxy, _options) => {
