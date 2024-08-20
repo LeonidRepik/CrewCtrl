@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://crewctrl-29196d49230a.herokuapp.com/:path*"
+      "source": "/api/(.*)",
+      "destination": "https://crewctrl-29196d49230a.herokuapp.com/api/$1"
     }
   ]
 }
