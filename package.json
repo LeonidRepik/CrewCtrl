@@ -8,7 +8,7 @@
     "start": "node server.js",
     "frontend": "npm run start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "build": "npm i && cd frontend && npm i && npm run build"
+    "build": "cd frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
