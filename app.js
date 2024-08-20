@@ -8,8 +8,11 @@ const mainPageRouter = require('./routes/mainPageRoutes');
 const createFlight = require('./routes/createFlightRoutes');
 const crewRouter = require('./routes/crewRoutes');
 
+var cors = require('cors');
+
 const app = express();
 
+app.use(cors());
 // 1) MIDDLEWARES
 const errorHandlerMiddleware = require('./middleware/errorHandlerMiddleware.js');
 
