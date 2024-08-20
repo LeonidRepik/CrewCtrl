@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "frontend": "npm run start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"\"npm run frontend\"",
-    "setup-production-app": "npm i && cd frontend && npm i && npm run build"
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "build": "npm i && cd frontend && npm i && npm run build"
   },
   "author": "",
   "license": "ISC",
