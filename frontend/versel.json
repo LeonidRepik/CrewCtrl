@@ -3,10 +3,6 @@
     {
       "source": "/api/:path*",
       "destination": "https://crewctrl-29196d49230a.herokuapp.com/:path*"
-    },
-    {
-      "source": "/api/:path*/",
-      "destination": "https://crewctrl-29196d49230a.herokuapp.com/:path*/"
     }
   ]
 }
