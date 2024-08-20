@@ -20,13 +20,49 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://crewctrl-29196d49230a.herokuapp.com/api',
+        target: 'https://crewctrl-29196d49230a.herokuapp.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
+        configure: (proxy, _options) => {
+          proxy.on('error', (err, _req, _res) => {
+            console.log('proxy error', err);
+          });
+          proxy.on('proxyReq', (proxyReq, req, _res) => {
+            console.log('Sending Request to the Target:', req.method, req.url);
+          });
+          proxy.on('proxyRes', (proxyRes, req, _res) => {
+            console.log(
+              'Received Response from the Target:',
+              proxyRes.statusCode,
+              req.url
+            );
+          });
+        },
       },
     },
   },
 });
+
+// '/api': {
+//           target: 'https://localhost:44305',
+//           changeOrigin: true,
+//           secure: false,
+//           ws: true,
+//           configure: (proxy, _options) => {
+//             proxy.on('error', (err, _req, _res) => {
+//               console.log('proxy error', err);
+//             });
+//             proxy.on('proxyReq', (proxyReq, req, _res) => {
+//               console.log('Sending Request to the Target:', req.method, req.url);
+//             });
+//             proxy.on('proxyRes', (proxyRes, req, _res) => {
+//               console.log('Received Response from the Target:', proxyRes.statusCode, req.url);
+//             });
+//           },
+//         }
+
+// 1)
+
 // import { defineConfig } from 'vite';
 // import react from '@vitejs/plugin-react';
 
