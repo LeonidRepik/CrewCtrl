@@ -1,0 +1,13 @@
+@import '../abstracts/_variables.scss';
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 990px) {
+  .dashboard {
+    display: grid;
+    // grid-template-columns: auto 1fr;
+  }
+}

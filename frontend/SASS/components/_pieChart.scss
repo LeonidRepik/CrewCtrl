@@ -1,0 +1,128 @@
+@import url('../abstracts/_variables.scss');
+
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  // height: 19.781rem;
+  gap: 1rem;
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+}
+.wrapper-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-pie-chart {
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+}
+
+.origin-box {
+  display: inline-block;
+  // height: 100%;
+  // width: 20.75rem;
+  // margin-left: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 0.75rem;
+  // max-width: 19.781rem;
+  // max-height: 15rem;
+  position: relative;
+
+  z-index: -1;
+  // margin-bottom: 2rem;
+  // width: 100%;
+  min-height: 15rem;
+
+  flex: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 990px) {
+  .dashboard-charts {
+    // background-color: #e7a238;
+  }
+  .origin-box {
+    // background-color: red;
+
+    // min-height: 130%;
+    height: 20rem;
+  }
+}
+
+.pie-chart {
+  max-width: 19.781rem;
+  max-height: 20.75rem;
+  margin: 0;
+  padding: 0;
+
+  &__box {
+    max-width: 14.875rem;
+    max-height: 9.438rem;
+    width: 14.875rem;
+    height: 9.438rem;
+    position: relative;
+    &canvas {
+      width: 80% !important;
+      height: 80% !important;
+    }
+    &-total {
+      text-align: center;
+      //styleName: Desktop/Paragraph/Reg-14;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.5px;
+      color: #5d5d5d;
+
+      &-number {
+        font-weight: bold;
+        color: black;
+        //styleName: Desktop/Subtitle/S3-24;
+        font-family: Barlow Condensed;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        // text-align: right;
+      }
+    }
+    &__colors {
+      display: flex;
+      margin-top: -4rem;
+      width: 100%;
+      justify-content: space-between;
+      &-box {
+        display: flex;
+        align-items: center;
+      }
+      &-green {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.1rem;
+        background-color: #56b18c;
+        display: flex;
+        margin-right: 0.3rem;
+      }
+      &-orange {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.1rem;
+        background-color: #e7a238;
+        display: flex;
+        margin-right: 0.3rem;
+      }
+      &-red {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.1rem;
+        background-color: #d93728;
+        display: flex;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}

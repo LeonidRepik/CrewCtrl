@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// TYPOGRAPHY ✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️✒️
+$ff-primary: 'Open Sans', sans-serif;
+// PARAGRAPHY --------------------------------
+$paragraph-large: 16px;
+$paragraph-medium: 14px;
+$paragraph-small: 12px;
+
+$subtitle-large: 32px;
+$subtitle-medium: 28px;
+$subtitle-small: 24px;
+$subtitle-extra-small: 20px;
+
+$heading-extra-large: 64px;
+$heading-large: 32px;
+$heading-medium: 28px;
+$heading-small: 24px;
+
+// Primary Colors 🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨
+$clr-primary-1: #336999;
+$clr-primary-2: #f2d492;
+$clr-primary-3: #202020;
+$clr-primary-4: #f4f4f4;
+
+$clr-secondary-1: #226f54;
+$clr-secondary-2: #ee6055;
+
+// BLUE COMPLIMENT COLORS 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+
+$clr-complimentary-blue-1: #679ec9;
+$clr-complimentary-blue-2: #4483b3;
+$clr-complimentary-blue-3: #2a547a;
+$clr-complimentary-blue-4: #264866;
+$clr-complimentary-blue-5: #243d56;
+
+// Yellow COMPLIMENT COLORS 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
+
+$clr-complimentary-orange-1: #fdf8ed;
+$clr-complimentary-orange-2: #faeacc;
+$clr-complimentary-orange-3: #ecba5d;
+$clr-complimentary-orange-4: #e7a238;
+$clr-complimentary-orange-5: #df8320;
+
+// Green COMPLIMENT COLORS 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+
+$clr-complimentary-green-1: #88cdaf;
+$clr-complimentary-green-2: #56b18c;
+$clr-complimentary-green-3: #359471;
+$clr-complimentary-green-4: #1d5f49;
+$clr-complimentary-green-5: #194c3c;
+
+// RED COMPLIMENT COLORS 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎
+
+$clr-complimentary-red-1: #fbaca6;
+$clr-complimentary-red-2: #f67c73;
+$clr-complimentary-red-3: #d93728;
+$clr-complimentary-red-4: #b7291e;
+$clr-complimentary-red-5: #97271d;
+
+$primary-btn-width: 12.5rem;
+$primary-btn-padding: 0.82rem;
+$buttons-spacing-h: 0.75rem;
+$buttons-spacing-v: 1rem;
+
+// Black COMPLIMENT COLORS 🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤
+$clr-complimentary-black-05: #f6f6f6;
+$clr-complimentary-black-10: #e7e7e7;
+$clr-complimentary-black-20: #d1d1d1;
+$clr-complimentary-black-30: #b0b0b0;
+$clr-complimentary-black-45: #454545;
+$clr-complimentary-black-50: #6d6d6d;
+$clr-complimentary-black-60: #5d5d5d;
+$clr-complimentary-black-90: #3d3d3d;
+$clr-complimentary-black-95: #2b2b2b;
+
+// Secondary Colors

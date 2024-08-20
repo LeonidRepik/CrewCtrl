@@ -1,0 +1,532 @@
+@import '../abstracts/_variables.scss';
+.flightTable1 {
+  color: $clr-complimentary-black-45;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    flex: 1 0 0;
+  }
+  &__frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    &__title {
+      display: flex;
+      height: 1.875rem;
+      align-items: center;
+      gap: 0.5rem;
+      align-self: stretch;
+      h3 {
+        font-family: 'Barlow Condensed';
+        color: $clr-primary-3;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 1.875rem */
+      }
+    }
+  }
+  &__count {
+    display: flex;
+    padding-top: 0.125rem;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+
+    ///////
+
+    color: $clr-complimentary-black-45;
+    font-family: 'Roboto';
+    font-size: calc(12 / 392 * 100vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5vw;
+  }
+  &__tabs {
+    width: 23.1875rem;
+
+    height: calc(36 / 852 * 100vh);
+    display: flex;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid $clr-complimentary-black-30;
+  }
+  &__tab {
+    display: flex;
+    height: 2.25rem;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    color: $clr-complimentary-black-50;
+  }
+  &__tab--active {
+    display: flex;
+    height: 2.25rem;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 12px;
+    flex: 1 0 0;
+    background: $clr-primary-1;
+
+    color: $clr-primary-4;
+  }
+  &__labels {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    border-radius: 2px 2px 0px 0px;
+    background: $clr-complimentary-black-05;
+  }
+  &__label1 {
+    display: flex;
+    width: 10rem;
+    align-items: center;
+    p {
+      display: flex;
+      width: 10rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+  }
+  &__label2 {
+    // display: flex;
+    // align-items: center;
+    // gap: 0.5rem;
+    // flex: 1 0 0;
+    display: flex;
+    width: 6rem;
+    align-items: center;
+  }
+  &__label3 {
+    display: none;
+
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+
+    p {
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      text-align: right;
+      // margin-left: calc(65 / 393 * 100vw);
+    }
+  }
+  &__label4 {
+    // justify-content: flex-end;
+    // align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 0;
+
+    p {
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      text-align: right;
+      // margin-left: calc(65 / 393 * 100vw);
+    }
+  }
+  &__list {
+    // display: flex;
+    // padding: 0.75rem 0rem;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    // align-self: stretch;
+    display: flex;
+    width: 23.5625rem;
+    padding: 0rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    display: flex;
+    padding: 0.75rem 0rem;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+    border-bottom: 0.0625rem solid $clr-complimentary-black-50;
+  }
+  &__flightAndAbbrev {
+    display: flex;
+    width: 10rem;
+    height: 1.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: $clr-primary-3;
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
+  &__fromTo {
+    font-size: 0.625rem;
+    color: $clr-complimentary-black-50;
+  }
+  &__containerForStatus {
+    width: 30.87vw;
+    height: 2.46vh;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__flightTable__status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    // flex: 1 0 0;
+  }
+  &__aircraft {
+    display: none;
+  }
+  #statusM {
+    display: flex;
+    padding: 0.25rem 0.5rem; // Converted from 4px and 8px
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; // Converted from 10px
+    border-radius: 8px;
+    border: 1px solid $clr-complimentary-black-20;
+    background: $clr-complimentary-black-05;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+  &__btn-container {
+    display: flex;
+    justify-content: space-around;
+    background: $clr-primary-1;
+    border-radius: 8px;
+    width: 2rem;
+    height: 2rem;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__addBtnBlue {
+    justify-content: flex-end;
+    display: flex;
+    padding: calc(4 / 852 * 100vh);
+
+    align-items: center;
+    gap: calc(4 / 393 * 100vw);
+    border-radius: 8px;
+    background: $clr-primary-1;
+    margin-left: auto;
+  }
+  &__addBtnWhite {
+    justify-content: flex-end;
+    display: flex;
+    padding: calc(4 / 852 * 100vh);
+
+    align-items: center;
+    gap: calc(4 / 393 * 100vw);
+    border-radius: 8px;
+    background: $clr-primary-4;
+    margin-left: auto;
+  }
+}
+.flightTable__addBtnBlue {
+  svg {
+    fill: $clr-primary-4;
+  }
+}
+@media (min-width: 990px) {
+  .flightTable1 {
+    margin-top: 1rem;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1.25rem;
+
+    align-self: center;
+    display: block;
+
+    padding: 1.25rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    background-color: $clr-complimentary-black-05;
+    border-radius: 8px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      flex: 1 0 0;
+    }
+    &__frame {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0.5rem;
+      align-self: stretch;
+      width: 100%; //56.625
+      height: 2.24rem;
+
+      &__title {
+        width: 55.25rem;
+        height: 2.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        flex: 2.5 0 0;
+        align-self: stretch;
+
+        h3 {
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+
+    &__count {
+      display: flex;
+      padding-top: 0.125rem;
+      align-items: center;
+      gap: 0.625rem;
+      align-self: stretch;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 125%;
+    }
+    &__tabs {
+      display: flex;
+      align-items: flex-start;
+      width: 18.75rem;
+      height: 1.625rem;
+    }
+    &__tab {
+      width: 17.75rem;
+      height: 1.625rem;
+      display: flex;
+      height: 1.625rem;
+      padding: 0.75rem 0.5rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    &__labels {
+      display: flex;
+      padding: 0.75rem 0.5rem;
+      align-items: flex-start;
+      gap: 1rem;
+      align-self: stretch;
+      width: 100%;
+      align-items: center;
+      background-color: $clr-complimentary-black-95;
+      height: 1rem;
+      div{
+        p{
+          color: $clr-primary-4;
+        }
+      }
+    }
+    &__wrapperSA {
+      flex-wrap: wrap;
+      flex-direction: row;
+      display: flex;
+      gap: 0.5rem;
+      flex: 1 0 0;
+      width: 43.4375rem;
+      height: auto;
+    }
+    &__label1 {
+      // padding-left: 0rem;
+      display: flex;
+      width: 22.75rem;
+      align-items: flex-start;
+      flex-direction: column;
+
+      p {
+        color: $clr-primary-3;
+
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+    &__label2 {
+      display: flex;
+      width: 0;
+      align-items: flex-start;
+      gap: 0.625rem;
+      flex: 1 0 0;
+      padding-left: 0.5rem;
+
+      // padding-left: 13.5rem;
+      // padding-right: 0;
+
+      p {
+        color: $clr-primary-3;
+
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+    &__label3 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-right: 1rem;
+      p {
+        color: $clr-primary-3;
+
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+    &__label4 {
+      // display: flex;
+
+      // align-items: center;
+
+      // flex: 1 0 0;
+      padding-right: 1rem;
+      p {
+        color: $clr-primary-3;
+
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+    &__table {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      padding: 0.25rem 0.5rem;
+      gap: 1rem;
+    }
+    &__list {
+      width: 100%;
+      height: 27.8125rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+    }
+    &__item {
+      width: 100%;
+      height: 3.875rem;
+      display: flex;
+      padding: 0.75rem 0.5rem;
+      align-items: center;
+      gap: 1rem;
+      align-self: stretch;
+    }
+    &__flightAndAbbrev {
+      display: flex;
+      width: 22.75rem;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #202020;
+
+      font-family: Roboto;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%;
+    }
+    &__fromTo {
+      font-size: 0.875rem;
+    }
+    &__containerForStatus {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1 0 0;
+      width: 43.4375rem;
+      height: auto;
+    }
+    &__status {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.625rem;
+      flex: 1 0 0;
+    }
+    &__aircraft {
+      display: flex;
+      align-items: flex-start;
+      flex: 1 0 0;
+    }
+    // #statusM {
+    //   background-color: white;
+    // }
+    &__btn-container {
+
+      display: flex;
+      justify-content: space-around;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid $clr-complimentary-black-90;
+      width: 5.0625rem;
+      height: 2rem;
+      gap: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      span {
+        display: flex;
+        align-items: center;
+        color: $clr-complimentary-black-90;
+
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+  }
+ .flightTable__addBtnBlue {
+    svg {
+      fill: $clr-complimentary-black-90;
+    }
+    span {
+      display: flex;
+    }
+  }
+}

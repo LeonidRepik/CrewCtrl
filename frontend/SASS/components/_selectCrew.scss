@@ -1,0 +1,226 @@
+@import '../abstracts/_variables';
+
+.addCrewContainer {
+  display: flex;
+  width: 24.5625rem;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: $buttons-spacing-h;
+  flex-shrink: 0;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    color: $clr-primary-3;
+    font-family: 'Barlow Condensed';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .listOfCrew {
+    width: 100%;
+    padding-bottom: 130px;
+  }
+
+  .crewCard {
+    display: flex;
+    padding: $buttons-spacing-h 0rem;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+    border-bottom: 1px solid $clr-complimentary-black-50;
+
+    .crewNameRole {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex: 1 0 0;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          color: $clr-primary-3;
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%;
+        }
+        p {
+          color: $clr-complimentary-black-50;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%;
+        }
+      }
+    }
+
+    .crewHours {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex: 1 0 0;
+
+      h3 {
+        color: #3d3d3d;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+      }
+      p {
+        color: $clr-complimentary-black-50;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+  }
+
+  .crewAddButton {
+    display: flex;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid #5d5d5d;
+  }
+
+  .crewAddButtonsSubmitCancel {
+    position: fixed;
+    bottom: 0;
+    right: 14px;
+    background-color: #e7e7e7;
+    display: flex;
+    width: 24.5625rem;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--buttons-spacing-h, 0.75rem);
+    border-top: 1px solid $clr-complimentary-black-20;
+
+    button {
+      color: $clr-primary-4;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+      display: flex;
+      padding: 0.75rem 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      align-self: stretch;
+
+      &.cancelButton {
+        color: #3D3D3D;
+        border-radius: 0.5rem;
+        border: 1px solid $clr-complimentary-black-60;
+      }
+
+      &.continue {
+        border-radius: 0.5rem;
+        background: $clr-primary-1;
+
+        &.disabledButton {
+          border-radius: 0.5rem;
+          background: $clr-complimentary-blue-1;
+        }
+      }
+    }
+
+    &.is-modal {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-self: stretch;
+    }
+  }
+}
+
+.firstCardContainer {
+  display: flex;
+  height: 4.875rem;
+  padding: $buttons-spacing-h;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $buttons-spacing-h;
+
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-radius: $buttons-spacing-h;
+  border: 2px solid $clr-complimentary-black-45;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.4375rem;
+    align-self: stretch;
+    color: $clr-primary-3;
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  .assignedCrewNumbers {
+    display: flex;
+    align-items: flex-start;
+    gap: $buttons-spacing-v;
+    align-self: stretch;
+
+    .infoCrew {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      div {
+        color: $clr-complimentary-orange-5;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+
+        &.ready {
+          color: $clr-complimentary-green-1;
+        }
+      }
+      p {
+        color: $clr-complimentary-orange-4;
+        font-family: Roboto;
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+
+        &.ready {
+          color: $clr-complimentary-green-5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .crewAddButtonsSubmitCancel {
+    background-color: white !important; 
+    right: 0 !important;
+  }
+}

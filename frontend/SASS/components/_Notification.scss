@@ -1,0 +1,40 @@
+.checkMark {
+  display: flex;
+  width: 21.6875rem;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.75rem;
+  background: var(--Complimentary-Blue-4, #264866);
+  animation: fadeInOut 1.7s forwards;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p {
+    color: var(--Primary-Palette-White, var(--Background, #f4f4f4));
+    text-align: center;
+
+    /* Mobile/Subtitle/S2-24 */
+    font-family: 'Barlow Condensed';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 2.25rem */
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

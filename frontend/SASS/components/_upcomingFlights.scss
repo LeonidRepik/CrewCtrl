@@ -1,0 +1,104 @@
+@import '../abstracts/_variables';
+
+.upcoming__flights__title {
+  color: $clr-primary-3;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding-bottom: 0.75rem;
+  h2 {
+    font-family: 'Barlow Condensed';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  p {
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    padding: 0.53rem 0 0.41rem 0.25rem;
+  }
+}
+
+.upcoming__flights {
+  display: flex;
+  align-items: flex-start;
+  gap: $buttons-spacing-v;
+  align-self: stretch;
+  overflow-x: scroll;
+}
+
+.flight__card {
+  color: $clr-complimentary-blue-5;
+  display: flex;
+  width: 16.3125rem;
+  min-width: 16.3125rem;
+  height: 16.3125rem;
+  min-height: 16.3125rem;
+  padding: $primary-btn-padding;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6875rem;
+  border-radius: 0.8rem;
+  background: #e7e7e7;
+
+  &.not_assigned {
+    background: $clr-primary-1;
+    color: $clr-primary-4;
+  }
+
+  &.no__crew{
+    height: revert;
+    min-height: revert;
+    background: $clr-primary-3;
+    color: $clr-primary-4;
+  }
+  
+
+  .flight__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    h1 {
+      font-family: 'Roboto', $ff-primary;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%;
+    }
+    p {
+      font-family: 'Roboto';
+      font-size: 0.625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+    }
+  }
+  .crew__names {
+    font-family: 'Barlow Condensed';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .cta_upcoming_flights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $primary-btn-padding;
+
+    align-self: stretch;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    :first-child {
+      font-weight: 400;
+    }
+  }
+}

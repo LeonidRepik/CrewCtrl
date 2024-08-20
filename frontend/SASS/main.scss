@@ -1,0 +1,34 @@
+@import url(./abstracts/_base.scss);
+@import url(./abstracts/_functions.scss);
+@import url(./abstracts/_mixins.scss);
+@import url(./abstracts/_variables.scss);
+
+@import url(./base/_animations.scss);
+@import url(./base/_base.scss);
+@import url(./base/_typography.scss);
+@import url(./base/_utilities.scss);
+
+@import url(./components/_buttons.scss);
+@import url(./components/_container.scss);
+@import url(./components/_forms.scss);
+@import url(./components/_logoContainer.scss);
+@import url(./components/_navbar.scss);
+@import url(./components/_pieChart.scss);
+@import url(./components/_spinner.scss);
+@import url(./components/_upcomingFlights.scss);
+@import url(./components/_newFlight.scss);
+
+@import url(./pages/_dashboardLayout.scss);
+@import url(./pages/_dashboardPage.scss);
+@import url(./pages/_registerPage.scss);
+@import url(./pages/_landingPage.scss);
+@import url(./components/_header.scss);
+@import url(./components/_sidebar.scss);
+@import url(./components/_CrewAvailabilityTable.scss);
+
+@import url(./components/_selectCrew.scss);
+@import url(./components/_returnHeader.scss);
+
+@import url('./pages/_FlightSummaryPage.scss');
+@import url('./components/_slidingModal.scss');
+@import url('./components/_flightInfoButton.scss');

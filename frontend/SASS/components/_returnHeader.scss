@@ -1,0 +1,45 @@
+@import '../abstracts/variables';
+
+.returnHeader {
+  position: sticky;
+  top: 0;
+  display: flex;
+  // width: 393px;
+  width: 26.8125rem;
+  padding: 4.25rem 1.25rem 1.25rem 1.25rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $buttons-spacing-h;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  background: $clr-primary-3;
+
+  .returnHeaderTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+  }
+
+  button {
+    display: flex;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    color: $clr-primary-4;
+  }
+  h2 {
+    color: $clr-primary-4;
+    font-family: 'Barlow Condensed';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &.mobileView {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

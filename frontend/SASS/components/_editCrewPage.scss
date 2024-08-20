@@ -1,0 +1,521 @@
+@import '../abstracts/_variables.scss';
+// body {
+//   display: flex;
+//   width: 27.25rem;
+//   height: 64rem;
+//   padding: 0rem 1.25rem 1.25rem 1.25rem;
+//   flex-direction: column;
+//   align-items: center;
+//   flex-shrink: 0;
+// }
+.assginMember__body {
+  display: flex;
+  width: 24.25rem;
+  height: 100%;
+  padding: 0rem 1.25rem 1.25rem 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  height: 110rem;
+}
+.frame219 {
+  display: flex;
+  padding-top: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.addCrew {
+  font-family: 'Barlow Condensed';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  // flex: 1 0 0;
+  align-self: stretch;
+  &__firstCard {
+    display: flex;
+    padding: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    border-radius: 0.75rem;
+    border: 2px solid $clr-complimentary-black-45;
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 0.4375rem;
+      align-self: stretch;
+      h1 {
+        color: $clr-primary-3;
+
+        /* Desktop/Subtitle/S4-20 */
+
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 1.875rem */
+      }
+    }
+    &__info {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+
+      align-self: stretch;
+      &__info1 {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        &__left {
+          color: $clr-complimentary-orange-5;
+
+          /* Desktop/Paragraph/Med-16 */
+          font-family: Roboto;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 1.25rem */
+        }
+        &__right {
+          color: $clr-complimentary-orange-4;
+
+          /* Desktop/Paragraph/Reg-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+      &__info2 {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        &__left {
+          color: $clr-secondary-1;
+
+          /* Desktop/Paragraph/Med-16 */
+          font-family: Roboto;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 1.25rem */
+        }
+        &__right {
+          color: $clr-complimentary-green-2;
+
+          /* Desktop/Paragraph/Reg-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+      &__info3 {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        &__left {
+          color: $clr-secondary-1;
+
+          /* Desktop/Paragraph/Med-16 */
+          font-family: Roboto;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 1.25rem */
+        }
+        &__right {
+          color: $clr-complimentary-green-2;
+
+          /* Desktop/Paragraph/Reg-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    color: $clr-primary-3;
+
+    /* Desktop/Subtitle/S3-24 */
+    font-family: 'Barlow Condensed';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 2.25rem */
+  }
+  &__tabs {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    flex: 1 0 0;
+  }
+  &__tab {
+    display: flex;
+    height: 2.25rem;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    color: var(--Blacks-Black-50, #6d6d6d);
+
+    /* Desktop/Paragraph/Med-14 */
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 1.09375rem */
+    &--active {
+      display: flex;
+      height: 2.25rem;
+      padding: 0.5rem 0.75rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      flex: 1 0 0;
+      border-radius: 0.75rem;
+      background: var(--Primary-Palette-Primary, #336999);
+      color: var(--Primary-Palette-White, var(--Background, #f4f4f4));
+    }
+  }
+  &__tableFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  &__table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  &__item {
+    display: flex;
+    padding: 0.75rem 0rem;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+    &__leftCol {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex: 1 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &__name {
+        color: $clr-primary-3;
+
+        /* Desktop/Paragraph/Med-16 */
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%; /* 1.25rem */
+      }
+      &__role {
+        color: $clr-complimentary-black-50;
+
+        /* Desktop/Paragraph/Reg-14 */
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 1.09375rem */
+      }
+    }
+    &__midCol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex: 1 0 0;
+      &__hr {
+        color: $clr-complimentary-black-90;
+        text-align: right;
+
+        /* Desktop/Paragraph/Med-14 */
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%; /* 1.09375rem */
+        &__title {
+          color: $clr-complimentary-black-50;
+          text-align: right;
+
+          /* Desktop/Paragraph/Reg-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+      &__btn {
+        display: flex;
+        padding: 0.25rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        border-radius: 0.5rem;
+        border: 1px solid $clr-complimentary-black-60;
+      }
+    }
+  }
+}
+.frame72 {
+  display: flex;
+  width: 24.5625rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-top: 1px solid var(--Blacks-Black-20, #d1d1d1);
+  button {
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    background: var(--Complimentary-Blue-1, #679ec9);
+    color: var(--Primary-Palette-White, var(--Background, #f4f4f4));
+
+    /* Desktop/Paragraph/Reg-16 */
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 1.25rem */
+  }
+}
+.confirm__up {
+  display: flex;
+  width: 24.5625rem;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  // flex: 1 0 0;
+  &__header {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    color: $clr-primary-3;
+
+    /* Mobile/Subtitle/S3-20 */
+    font-family: 'Barlow Condensed';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 1.875rem */
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      &__role {
+        align-self: stretch;
+        color: #000;
+
+        /* Mobile/Subtitle/S4-16 */
+        font-family: 'Barlow Condensed';
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 1.5rem */
+      }
+      &__name {
+        display: flex;
+        padding: 0.75rem 0rem;
+        align-items: flex-start;
+        gap: 2.5rem;
+        align-self: stretch;
+        border-bottom: 1px solid $clr-complimentary-black-50;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        flex: 1 0 0;
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          flex: 1 0 0;
+          color: $clr-primary-3;
+
+          /* Mobile/Paragraph/Med-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+    }
+    &__mid {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      &__role {
+        align-self: stretch;
+        color: #000;
+
+        /* Mobile/Subtitle/S4-16 */
+        font-family: 'Barlow Condensed';
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 1.5rem */
+      }
+      &__name {
+        display: flex;
+        padding: 0.75rem 0rem;
+        align-items: flex-start;
+        gap: 2.5rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        flex: 1 0 0;
+        p {
+          flex: 1 0 0;
+          color: $clr-primary-3;
+
+          /* Mobile/Paragraph/Med-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+    }
+    &__low {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      &__role {
+        align-self: stretch;
+        color: #000;
+
+        /* Mobile/Subtitle/S4-16 */
+        font-family: 'Barlow Condensed';
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 1.5rem */
+      }
+      &__name {
+        display: flex;
+        padding: 0.75rem 0rem;
+        align-items: flex-start;
+        gap: 2.5rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        flex: 1 0 0;
+        p {
+          flex: 1 0 0;
+          color: $clr-primary-3;
+
+          /* Mobile/Paragraph/Med-12 */
+          font-family: Roboto;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 0.9375rem */
+        }
+      }
+    }
+  }
+}
+.confirm__down {
+  display: flex;
+  width: 24.5625rem;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  &__cancel {
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+    color: var(--Blacks-Black-90, #3d3d3d);
+
+    /* Desktop/Paragraph/Reg-16 */
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 1.25rem */
+    border-radius: 0.5rem;
+    border: 1px solid var(--Blacks-Black-60, #5d5d5d);
+  }
+  &__confirm {
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+    background: var(--Primary-Palette-Primary, #336999);
+
+    /* Desktop/Paragraph/Reg-16 */
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 1.25rem */
+    border-radius: 0.5rem;
+    border: 1px solid var(--Blacks-Black-60, #5d5d5d);
+    color: var(--Primary-Palette-White, var(--Background, #f4f4f4));
+  }
+}
+@media (min-width: 900px) {
+  .assginMember__body {
+    height: 110rem;
+  }
+  .addCrew {
+    flex: none;
+    &__tabs {
+      flex: none;
+    }
+    &__tableFrame {
+      flex: none;
+    }
+  }
+}

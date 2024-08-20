@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+/* Dashboard Layout - start */
+.dashboard-page {
+  /* padding-top: 18rem;
+  display: grid;
+  place-items: center; */
+}
+/* Dashboard Layout - end */

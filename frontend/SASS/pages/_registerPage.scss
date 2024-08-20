@@ -1,0 +1,97 @@
+@import '../abstracts/_variables.scss';
+
+.register-page {
+  height: 100vh;
+  //   display: grid;
+  //   place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $clr-primary-4;
+  background-color: $clr-primary-3;
+  color: $clr-primary-4;
+}
+
+.register-page h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.register-page .logo-container {
+  margin: 0 auto;
+  //   width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form {
+  width: 90vw;
+  border-radius: 0.5rem;
+  //   box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+
+  max-width: 450px;
+  background-color: $clr-primary-3;
+  //   background-color: $clr-complimentary-black-45;
+  border: 1px solid $clr-primary-4;
+}
+.form-input-label {
+  display: block;
+  margin-bottom: 0.7rem;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: $clr-primary-4;
+  color: $clr-complimentary-black-50;
+}
+.form-input,
+.form-select,
+.form-btn {
+  height: 2.5rem;
+}
+.form-row {
+  margin-bottom: 1rem;
+}
+
+button.btn {
+  cursor: pointer;
+  border: transparent;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  display: inline-block;
+}
+
+button.btn-primary {
+  color: $clr-primary-4;
+  background: $clr-primary-1;
+}
+
+button.btn-secondary {
+  color: $clr-complimentary-black-45;
+  background: $clr-primary-4;
+  border: 1px solid $clr-complimentary-black-45;
+}
+
+button.btn-block {
+  width: 100%;
+}
+button:disabled {
+  cursor: wait;
+}
+
+.register-page p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link {
+  color: $clr-primary-1;
+}

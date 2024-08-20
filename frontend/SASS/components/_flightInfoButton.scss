@@ -1,0 +1,29 @@
+@import '../abstracts/_variables';
+
+.flightTable__addBtnWhte {
+  display: flex;
+  padding: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 0.8rem;
+  border: 1px solid $clr-complimentary-black-60;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  p {
+    color: $clr-complimentary-black-90;
+    font-family: Roboto;
+    font-size: $buttons-spacing-v;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 393px) {
+  .flightTable__addBtnWhte {
+    padding: 0.25rem 0.5rem;
+  }
+}

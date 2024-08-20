@@ -1,0 +1,47 @@
+@import '../abstracts/_variables.scss';
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 990px) {
+  .sidebar {
+    display: block;
+    width: 15vw;
+    position: fixed;
+    background-color: $clr-primary-4;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    gap: 1rem;
+    color: $clr-primary-3;
+    text-transform: capitalize;
+  }
+
+  .nav-link:last-of-type {
+    margin-top: auto;
+    border-top: 1px solid $clr-complimentary-black-30;
+  }
+
+  .icon {
+    margin-bottom: 0;
+  }
+
+  .nav-link p {
+    font-size: 1rem;
+  }
+
+  .active {
+    color: $clr-primary-1;
+  }
+}

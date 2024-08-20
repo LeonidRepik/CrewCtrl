@@ -1,0 +1,18 @@
+@import '../abstracts/_variables.scss';
+
+.dashboard-page {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 20rem 0rem;
+  padding-bottom: 6rem;
+  padding-top: 300px;
+}
+
+@media (min-width: 990px) {
+  .dashboard-page {
+    width: 81.7vw;
+    padding: 0rem;
+    padding-top: 6rem;
+    margin-left: 16vw;
+  }
+}

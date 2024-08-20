@@ -1,0 +1,46 @@
+@import '../abstracts/_variables.scss';
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $clr-primary-4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  color: $clr-primary-3;
+
+  &:hover {
+    background-color: $clr-complimentary-black-10;
+  }
+}
+
+.nav-link p {
+  font-size: 0.63rem;
+  font-size: 0.45rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+}
+.active {
+  color: $clr-primary-1;
+}
+
+@media (min-width: 990px) {
+  .navbar {
+    display: none;
+  }
+}
