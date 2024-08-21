@@ -1,8 +1,9 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
-import { registerAction } from './pages/Register';
-import { loginAction } from './pages/Login';
-import { dashboardLoader } from './pages/DashboardLayout';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import axios from "axios";
+axios.defaults.baseURL = "https://crewctrl-29196d49230a.herokuapp.com";
+import { registerAction } from "./pages/Register";
+import { loginAction } from "./pages/Login";
+import { dashboardLoader } from "./pages/DashboardLayout";
 
 import {
   HomeLayout,
@@ -20,13 +21,13 @@ import {
   AddCrewPage,
   CrewPage,
   EditCrewForFlight,
-} from './pages';
+} from "./pages";
 
-import '../SASS/main.scss';
+import "../SASS/main.scss";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
@@ -35,57 +36,57 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: 'register',
+        path: "register",
         element: <Register />,
         action: registerAction,
       },
       {
-        path: 'login',
+        path: "login",
         element: <Login />,
         action: loginAction,
       },
       {
-        path: 'new-flight',
+        path: "new-flight",
         element: <NewFlightPage />,
       },
       {
-        path: 'add-crew',
+        path: "add-crew",
         element: <AddCrewPage />,
       },
       {
-        path: 'crew/:id',
+        path: "crew/:id",
         element: <CrewPage />,
       },
       {
-        path: 'dashboard',
+        path: "dashboard",
         element: <DashboardLayout />,
         loader: dashboardLoader,
         children: [
           {
             index: true,
-            path: 'main',
+            path: "main",
             element: <DashboardPage />,
           },
           {
-            path: 'availability',
+            path: "availability",
             element: <AvailabilityPage />,
           },
           {
-            path: 'create-flight',
+            path: "create-flight",
             element: <CreateFlight />,
           },
           {
-            path: 'assign-crew',
+            path: "assign-crew",
             element: <AssignCrew />,
           },
           {
-            path: 'profile',
+            path: "profile",
             element: <Profile />,
           },
         ],
       },
       {
-        path: 'edit-crew-forFlight/:flightId',
+        path: "edit-crew-forFlight/:flightId",
         element: <EditCrewForFlight />,
       },
     ],

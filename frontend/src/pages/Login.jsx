@@ -7,10 +7,7 @@ export const loginAction = async ({ request }) => {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
   try {
-    await axios.post(
-      "https://crewctrl-29196d49230a.herokuapp.com/api/v1/users/login",
-      data
-    );
+    await axios.post("/api/v1/users/login", data);
     toast.success("Login successful");
     return redirect("/dashboard/main");
   } catch (error) {
