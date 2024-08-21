@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite preview",
     "build": "vite build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
