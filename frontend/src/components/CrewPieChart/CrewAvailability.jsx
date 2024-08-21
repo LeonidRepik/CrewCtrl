@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Doughnut } from 'react-chartjs-2';
-import { Chart, ArcElement } from 'chart.js';
-import axios from 'axios';
-import { useQuery } from '@tanstack/react-query';
+import { useEffect, useState } from "react";
+import { Doughnut } from "react-chartjs-2";
+import { Chart, ArcElement } from "chart.js";
+import axios from "axios";
+import { useQuery } from "@tanstack/react-query";
 
 Chart.register(ArcElement);
 
@@ -17,9 +17,9 @@ export const CrewAvailability = () => {
     datasets: [
       {
         data: [1, 4, 3],
-        backgroundColor: ['#e7a238', '#359471', '#d93728'],
+        backgroundColor: ["#e7a238", "#359471", "#d93728"],
         display: true,
-        borderColor: 'transparent',
+        borderColor: "transparent",
       },
     ],
   });
@@ -33,11 +33,11 @@ export const CrewAvailability = () => {
     const pCrew = [];
 
     crewArr.forEach((item) => {
-      item.flightHours.available === 'Unavailable' && uCrew.push(item);
+      item.flightHours.available === "Unavailable" && uCrew.push(item);
       // setCrewUnavailable([...crewUnavailable, { item }]);
-      item.flightHours.available === 'PTO' && pCrew.push(item);
+      item.flightHours.available === "PTO" && pCrew.push(item);
       // setCrewPto([...crewPto, { item }]);
-      item.flightHours.available === 'available' && aCrew.push(item);
+      item.flightHours.available === "available" && aCrew.push(item);
       // setCrewAvailable([...crewAvailable, { item }]);
     });
 
@@ -49,9 +49,9 @@ export const CrewAvailability = () => {
       datasets: [
         {
           data: [aCrew.length, uCrew.length, pCrew.length],
-          backgroundColor: ['#e7a238', '#359471', '#d93728'],
+          backgroundColor: ["#e7a238", "#359471", "#d93728"],
           display: true,
-          borderColor: 'transparent',
+          borderColor: "transparent",
         },
       ],
     });
@@ -62,8 +62,8 @@ export const CrewAvailability = () => {
     isLoading: crewLoading,
     isError: crewError,
   } = useQuery({
-    queryKey: ['crew'],
-    queryFn: () => axios.get('/api/v1/crew/'),
+    queryKey: ["crew"],
+    queryFn: () => axios.get("/api/v1/crew/"),
     onSuccess: (data) => setCrew(data.data.data.CrewMembers),
   });
 
@@ -93,7 +93,7 @@ export const CrewAvailability = () => {
                 },
                 rotation: -90,
                 circumference: 180,
-                cutout: '85%',
+                cutout: "85%",
                 maintainAspectRatio: true,
                 responsive: true,
               }}
@@ -102,15 +102,15 @@ export const CrewAvailability = () => {
 
           <div
             style={{
-              position: 'absolute',
-              top: '70%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              textAlign: 'center',
+              position: "absolute",
+              top: "70%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
             }}
           >
             <div className="pie-chart__box-total">
-              Total Crew{' '}
+              Total Crew{" "}
               <p className="pie-chart__box-total-number">{crew.length}</p>
             </div>
           </div>
