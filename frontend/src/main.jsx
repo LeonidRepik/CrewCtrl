@@ -6,6 +6,9 @@ import './index.css';
 import { ToastContainer } from 'react-toastify';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+import axios from 'axios';
+axios.defaults.baseURL = 'https://crewctrl-29196d49230a.herokuapp.com';
 const queryClient = new QueryClient();
 import '../SASS/main.scss';
 
