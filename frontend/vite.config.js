@@ -1,12 +1,12 @@
-// import { defineConfig } from 'vite';
+// import { defineConfig } from "vite";
 
 // export default defineConfig({
-//   root: './', // Set the root to the current directory (frontend)
+//   root: "./", // Set the root to the current directory (frontend)
 //   build: {
-//     outDir: '../dist', // Output directory relative to the root
+//     outDir: "../dist", // Output directory relative to the root
 //     rollupOptions: {
 //       input: {
-//         main: './index.html', // Entry file relative to the root directory
+//         main: "./index.html", // Entry file relative to the root directory
 //       },
 //     },
 //   },
@@ -18,11 +18,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 8000,
-    host: '127.0.0.1',
     proxy: {
       '/api': {
-        target: 'https://crewctrl-29196d49230a.herokuapp.com',
+        target: 'https://crewctrl-29196d49230a.herokuapp.com/api',
         changeOrigin: true,
         secure: false,
         configure: (proxy, _options) => {
@@ -70,4 +68,68 @@ export default defineConfig({
 
 // export default defineConfig({
 //   plugins: [react()],
+// });
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// export default defineConfig({
+//   plugins: [react()],
+//   server: {
+//     proxy: {
+//       "/api": {
+//         target: "https://crewctrl-29196d49230a.herokuapp.com", // Heroku app URL
+//         changeOrigin: true,
+//         secure: true,
+//         rewrite: (path) => path.replace(/^\/api/, ""), // Ensure the path is correctly routed
+//         configure: (proxy, _options) => {
+//           proxy.on("error", (err, _req, _res) => {
+//             console.error("Proxy error:", err);
+//           });
+//           proxy.on("proxyReq", (proxyReq, req, _res) => {
+//             console.log("Sending Request to Target:", req.method, req.url);
+//           });
+//           proxy.on("proxyRes", (proxyRes, req, _res) => {
+//             console.log(
+//               "Received Response from Target:",
+//               proxyRes.statusCode,
+//               req.url
+//             );
+//           });
+//         },
+//       },
+//     },
+//   },
+// });
+
+// axios.defaults.baseURL = 'https://crewctrl-29196d49230a.herokuapp.com';
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// export default defineConfig({
+//   plugins: [react()],
+//   server: {
+//     proxy: {
+//       "/api": {
+//         target: "https://crewctrl-29196d49230a.herokuapp.com/api",
+//         changeOrigin: true,
+//         rewrite: (path) => path.replace(/^\/api/, ""),
+//         secure: false, // HTTPS
+//       },
+//     },
+//   },
+// });
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// export default defineConfig({
+//   plugins: [react()],
+//   build: {
+//     outDir: "dist",
+//     rollupOptions: {
+//       input: "/index.html",
+//     },
+//   },
 // });
