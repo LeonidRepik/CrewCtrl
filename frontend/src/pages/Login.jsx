@@ -1,17 +1,14 @@
 import { Link, Form, redirect, useNavigation } from 'react-router-dom';
 import { Logo, FormRowInput } from '../components';
 import axios from 'axios';
-import { toast } from 'react-toastify';
 
 export const loginAction = async ({ request }) => {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
   try {
     await axios.post('/api/v1/users/login', data);
-    toast.success('Login successful');
     return redirect('/dashboard/main');
   } catch (error) {
-    toast.error('Login failed');
     return error;
   }
 };
